@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+management:
+  health:
+    externalApiHealthStatus:
+      enabled: true
+    ping:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
